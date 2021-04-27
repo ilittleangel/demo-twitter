@@ -1,4 +1,4 @@
-# Demo Logstash Twitter
+# Demo Twitter Streaming Ingestion
 
 
 
