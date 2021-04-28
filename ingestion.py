@@ -2,7 +2,7 @@ import json
 import tweepy
 from utils import elastic
 from utils import tweets
-from settings import credentials
+from settings import credentials, twitter_filters
 
 
 class MyStreamListener(tweepy.StreamListener):
@@ -23,7 +23,7 @@ if __name__ == '__main__':
         auth = tweepy.OAuthHandler(credentials['consumer_key'], credentials['consumer_secret'])
         auth.set_access_token(credentials['access_token'], credentials['access_token_secret'])
         stream = tweepy.Stream(auth=auth, listener=MyStreamListener())
-        stream.filter(track=["Beriain"])
+        stream.filter(track=twitter_filters)
 
     except KeyboardInterrupt as k:
         print('Bye!')

@@ -9,3 +9,5 @@ credentials = {
     'access_token': os.environ.get('ACCESS_TOKEN'),
     'access_token_secret': os.environ.get('ACCESS_TOKEN_SECRET')
 }
+
+twitter_filters = ['Beriain']
