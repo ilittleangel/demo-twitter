@@ -1,5 +1,8 @@
 import os
 
+brokers = 'localhost:9092'
+topic = 'tweets'
+
 es_nodes = ['http://localhost:9200']
 es_index = 'tweets'
 
@@ -10,4 +13,4 @@ credentials = {
     'access_token_secret': os.environ.get('ACCESS_TOKEN_SECRET')
 }
 
-twitter_filters = ['Beriain']
+twitter_filters = ['Beriain', 'covid19', 'vacuna']

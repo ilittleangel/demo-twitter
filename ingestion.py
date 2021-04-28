@@ -2,7 +2,8 @@ import json
 import tweepy
 from utils import elastic
 from utils import tweets
-from settings import credentials, twitter_filters
+from utils import kafka
+from settings import credentials, twitter_filters, topic
 
 
 class MyStreamListener(tweepy.StreamListener):
@@ -11,6 +12,10 @@ class MyStreamListener(tweepy.StreamListener):
         doc = tweets.transform(tweet)
         print(f"{tweet['user']['name']} --> {tweet['text']}")
         elastic.index(es, doc)
+        kafka.producer.produce(topic,
+                               key=f"{tweet['user']['name']}-{doc['timestamp']}",
+                               value=data,
+                               callback=kafka.acked)
 
     def on_error(self, status):
         print(status)
