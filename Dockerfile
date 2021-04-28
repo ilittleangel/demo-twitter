@@ -1,9 +1,14 @@
-FROM python:3.6.5-slim-stretch
+FROM python:3.8-slim
 LABEL project="demo-twitter"
 
 WORKDIR /demo-twitter
 COPY requirements.txt requirements.txt
-RUN pip3.6 install -r requirements.txt
+
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y --no-install-recommends g++ make
+
+RUN pip3.8 install -r requirements.txt
 
 COPY . .
 
