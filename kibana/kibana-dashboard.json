@@ -1,0 +1,164 @@
+{
+  "version": "7.12.0",
+  "objects": [
+    {
+      "id": "47135670-a803-11eb-bc95-3538416d1693",
+      "type": "dashboard",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-04-29T07:59:36.287Z",
+      "version": "WzI3MzQsMl0=",
+      "attributes": {
+        "title": "Demo Twitter",
+        "hits": 0,
+        "description": "",
+        "panelsJSON": "[{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":0,\"w\":25,\"h\":12,\"i\":\"4d022e1d-52d7-4113-a3d4-fbc2e7752f44\"},\"panelIndex\":\"4d022e1d-52d7-4113-a3d4-fbc2e7752f44\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsXY\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"79df6561-af49-4eee-a1dd-f3783f8b9119\":{\"columns\":{\"83ce28a5-0ae4-4a3b-ab91-6b01d01d222b\":{\"label\":\"tweet test\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"text.keyword\",\"isBucketed\":true,\"params\":{\"size\":100,\"orderBy\":{\"type\":\"column\",\"columnId\":\"023b837a-b163-4f5e-91c1-d1826a06ffa4\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false},\"customLabel\":true},\"1c97f83b-6356-45ef-9c51-caadb144cef4\":{\"label\":\"timestamp\",\"dataType\":\"date\",\"operationType\":\"date_histogram\",\"sourceField\":\"timestamp\",\"isBucketed\":true,\"scale\":\"interval\",\"params\":{\"interval\":\"auto\"}},\"023b837a-b163-4f5e-91c1-d1826a06ffa4\":{\"label\":\"records\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"83ce28a5-0ae4-4a3b-ab91-6b01d01d222b\",\"1c97f83b-6356-45ef-9c51-caadb144cef4\",\"023b837a-b163-4f5e-91c1-d1826a06ffa4\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"bar_stacked\",\"layers\":[{\"layerId\":\"79df6561-af49-4eee-a1dd-f3783f8b9119\",\"seriesType\":\"bar_stacked\",\"xAccessor\":\"1c97f83b-6356-45ef-9c51-caadb144cef4\",\"splitAccessor\":\"83ce28a5-0ae4-4a3b-ab91-6b01d01d222b\",\"accessors\":[\"023b837a-b163-4f5e-91c1-d1826a06ffa4\"]}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-79df6561-af49-4eee-a1dd-f3783f8b9119\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Tweets\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":25,\"y\":0,\"w\":6,\"h\":6,\"i\":\"13a7e0d0-9053-42b5-a07d-fb05fcaab7e7\"},\"panelIndex\":\"13a7e0d0-9053-42b5-a07d-fb05fcaab7e7\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsMetric\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"0b4d93ff-6f3a-4c22-a70e-23e632c032cd\":{\"columns\":{\"c06c1fbc-59f0-4594-bb76-e07ed8a64d24\":{\"label\":\"tweets\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"c06c1fbc-59f0-4594-bb76-e07ed8a64d24\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"layerId\":\"0b4d93ff-6f3a-4c22-a70e-23e632c032cd\",\"accessor\":\"c06c1fbc-59f0-4594-bb76-e07ed8a64d24\"},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-0b4d93ff-6f3a-4c22-a70e-23e632c032cd\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Count tweets\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":31,\"y\":0,\"w\":17,\"h\":12,\"i\":\"2a03e731-fc89-4c66-b239-9b0028db0f81\"},\"panelIndex\":\"2a03e731-fc89-4c66-b239-9b0028db0f81\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsXY\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"5888cc3a-1222-4fd3-9750-e9e320d04fd2\":{\"columns\":{\"48f96923-ea70-4a17-b057-1a795349b1d9\":{\"label\":\"users\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"user.name.keyword\",\"isBucketed\":true,\"params\":{\"size\":20,\"orderBy\":{\"type\":\"column\",\"columnId\":\"4863fcb8-18cc-4234-9b14-775741782d7a\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false},\"customLabel\":true},\"4863fcb8-18cc-4234-9b14-775741782d7a\":{\"label\":\"followers\",\"dataType\":\"number\",\"operationType\":\"max\",\"sourceField\":\"user.followers_count\",\"isBucketed\":false,\"scale\":\"ratio\",\"customLabel\":true}},\"columnOrder\":[\"48f96923-ea70-4a17-b057-1a795349b1d9\",\"4863fcb8-18cc-4234-9b14-775741782d7a\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"bar_horizontal\",\"layers\":[{\"layerId\":\"5888cc3a-1222-4fd3-9750-e9e320d04fd2\",\"accessors\":[\"4863fcb8-18cc-4234-9b14-775741782d7a\"],\"position\":\"top\",\"seriesType\":\"bar_horizontal\",\"showGridlines\":false,\"xAccessor\":\"48f96923-ea70-4a17-b057-1a795349b1d9\",\"yConfig\":[{\"forAccessor\":\"4863fcb8-18cc-4234-9b14-775741782d7a\",\"color\":\"#6092c0\"}]}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-5888cc3a-1222-4fd3-9750-e9e320d04fd2\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Top 20 followers\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":25,\"y\":6,\"w\":6,\"h\":6,\"i\":\"bb04a3eb-c52f-44cb-832d-e21f5241f334\"},\"panelIndex\":\"bb04a3eb-c52f-44cb-832d-e21f5241f334\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsMetric\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"6780dd61-93d9-4a2d-90cc-348b35a6ce60\":{\"columns\":{\"208e6b23-6bcd-4f3c-b5dd-b75acb65eff0\":{\"label\":\"Max followers\",\"dataType\":\"number\",\"operationType\":\"max\",\"sourceField\":\"user.followers_count\",\"isBucketed\":false,\"scale\":\"ratio\",\"customLabel\":true}},\"columnOrder\":[\"208e6b23-6bcd-4f3c-b5dd-b75acb65eff0\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"layerId\":\"6780dd61-93d9-4a2d-90cc-348b35a6ce60\",\"accessor\":\"208e6b23-6bcd-4f3c-b5dd-b75acb65eff0\"},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-6780dd61-93d9-4a2d-90cc-348b35a6ce60\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Followers\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":12,\"w\":25,\"h\":8,\"i\":\"2e64d4f2-d1be-4f3c-bdde-b70dcb83697b\"},\"panelIndex\":\"2e64d4f2-d1be-4f3c-bdde-b70dcb83697b\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsXY\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"6a844634-d83e-4187-9e29-266fc9029cb8\":{\"columns\":{\"17f144c6-905d-4553-9f32-f1ec1ccb98bf\":{\"label\":\"timestamp\",\"dataType\":\"date\",\"operationType\":\"date_histogram\",\"sourceField\":\"timestamp\",\"isBucketed\":true,\"scale\":\"interval\",\"params\":{\"interval\":\"auto\"}},\"deea55d2-5515-4ab6-b68a-0cad3e886350\":{\"label\":\"Count\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true},\"9f310bff-04a9-46d6-b3ed-4a1366f288cd\":{\"label\":\"locations\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"user.location.keyword\",\"isBucketed\":true,\"params\":{\"size\":100,\"orderBy\":{\"type\":\"column\",\"columnId\":\"deea55d2-5515-4ab6-b68a-0cad3e886350\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false},\"customLabel\":true}},\"columnOrder\":[\"9f310bff-04a9-46d6-b3ed-4a1366f288cd\",\"17f144c6-905d-4553-9f32-f1ec1ccb98bf\",\"deea55d2-5515-4ab6-b68a-0cad3e886350\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"line\",\"layers\":[{\"layerId\":\"6a844634-d83e-4187-9e29-266fc9029cb8\",\"accessors\":[\"deea55d2-5515-4ab6-b68a-0cad3e886350\"],\"position\":\"top\",\"seriesType\":\"line\",\"showGridlines\":false,\"splitAccessor\":\"9f310bff-04a9-46d6-b3ed-4a1366f288cd\",\"xAccessor\":\"17f144c6-905d-4553-9f32-f1ec1ccb98bf\"}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[{\"meta\":{\"alias\":null,\"negate\":true,\"disabled\":false,\"type\":\"phrase\",\"key\":\"user.location.keyword\",\"params\":{\"query\":\"null\"},\"indexRefName\":\"filter-index-pattern-0\"},\"query\":{\"match_phrase\":{\"user.location.keyword\":\"null\"}},\"$state\":{\"store\":\"appState\"}}]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-6a844634-d83e-4187-9e29-266fc9029cb8\"},{\"name\":\"filter-index-pattern-0\",\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Tweets per location\"},{\"version\":\"7.12.0\",\"type\":\"visualization\",\"gridData\":{\"x\":25,\"y\":12,\"w\":23,\"h\":11,\"i\":\"09a8b8cc-ce6d-472b-a430-070271b1d739\"},\"panelIndex\":\"09a8b8cc-ce6d-472b-a430-070271b1d739\",\"embeddableConfig\":{\"savedVis\":{\"title\":\"\",\"description\":\"\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":72,\"showLabel\":true},\"uiState\":{},\"data\":{\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"params\":{},\"schema\":\"metric\"},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"params\":{\"field\":\"user.name.keyword\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":20,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"},\"schema\":\"segment\"}],\"searchSource\":{\"index\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Top 20 tweets by user\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":20,\"w\":25,\"h\":13,\"i\":\"dc6c5285-8e3c-4e5d-b873-067eec3fcdca\"},\"panelIndex\":\"dc6c5285-8e3c-4e5d-b873-067eec3fcdca\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsXY\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"63e509ec-ea2c-41df-8320-cf37b219a427\":{\"columns\":{\"f3f28e01-cd68-47b8-bb23-6ba5fe779098\":{\"label\":\"locations\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"user.location.keyword\",\"isBucketed\":true,\"params\":{\"size\":20,\"orderBy\":{\"type\":\"column\",\"columnId\":\"705f39ab-326f-4a25-ba05-ddd596772e39\"},\"orderDirection\":\"desc\",\"otherBucket\":false,\"missingBucket\":false},\"customLabel\":true},\"705f39ab-326f-4a25-ba05-ddd596772e39\":{\"label\":\"Count\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"f3f28e01-cd68-47b8-bb23-6ba5fe779098\",\"705f39ab-326f-4a25-ba05-ddd596772e39\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"bar_horizontal\",\"layers\":[{\"layerId\":\"63e509ec-ea2c-41df-8320-cf37b219a427\",\"accessors\":[\"705f39ab-326f-4a25-ba05-ddd596772e39\"],\"position\":\"top\",\"seriesType\":\"bar_horizontal\",\"showGridlines\":false,\"xAccessor\":\"f3f28e01-cd68-47b8-bb23-6ba5fe779098\",\"yConfig\":[{\"forAccessor\":\"705f39ab-326f-4a25-ba05-ddd596772e39\",\"color\":\"#54b399\"}]}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[{\"meta\":{\"alias\":null,\"negate\":true,\"disabled\":false,\"type\":\"phrase\",\"key\":\"user.location.keyword\",\"params\":{\"query\":\"null\"},\"indexRefName\":\"filter-index-pattern-0\"},\"query\":{\"match_phrase\":{\"user.location.keyword\":\"null\"}},\"$state\":{\"store\":\"appState\"}}]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-63e509ec-ea2c-41df-8320-cf37b219a427\"},{\"name\":\"filter-index-pattern-0\",\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Top 20 locations\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":25,\"y\":23,\"w\":23,\"h\":5,\"i\":\"ae7fce4b-d4e5-4e95-959e-0b239ac30e0e\"},\"panelIndex\":\"ae7fce4b-d4e5-4e95-959e-0b239ac30e0e\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsXY\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"0a8d53ee-efa1-456a-80fa-77ceb227dc64\":{\"columns\":{\"0855a513-2667-4121-ae42-b5c5ea5b601f\":{\"label\":\"timestamp\",\"dataType\":\"date\",\"operationType\":\"date_histogram\",\"sourceField\":\"timestamp\",\"isBucketed\":true,\"scale\":\"interval\",\"params\":{\"interval\":\"auto\"},\"customLabel\":true},\"218a7a6c-2a77-4b74-ba92-6078df8a2aa2\":{\"label\":\"Count\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"0855a513-2667-4121-ae42-b5c5ea5b601f\",\"218a7a6c-2a77-4b74-ba92-6078df8a2aa2\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"bar_stacked\",\"layers\":[{\"layerId\":\"0a8d53ee-efa1-456a-80fa-77ceb227dc64\",\"accessors\":[\"218a7a6c-2a77-4b74-ba92-6078df8a2aa2\"],\"position\":\"top\",\"seriesType\":\"bar_stacked\",\"showGridlines\":false,\"xAccessor\":\"0855a513-2667-4121-ae42-b5c5ea5b601f\",\"yConfig\":[{\"forAccessor\":\"218a7a6c-2a77-4b74-ba92-6078df8a2aa2\",\"color\":\"#54b69c\"}]}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-0a8d53ee-efa1-456a-80fa-77ceb227dc64\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Input tweets\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":25,\"y\":28,\"w\":7,\"h\":5,\"i\":\"d188db98-c4f6-40ea-a44c-f917930c4cbf\"},\"panelIndex\":\"d188db98-c4f6-40ea-a44c-f917930c4cbf\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsMetric\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"be2ff626-d58c-4310-a9b3-4616fc1e3bee\":{\"columns\":{\"a8d5ed59-152b-4ca3-be55-57c957519cd6\":{\"label\":\"Unique users\",\"dataType\":\"number\",\"operationType\":\"cardinality\",\"scale\":\"ratio\",\"sourceField\":\"user.name.keyword\",\"isBucketed\":false,\"customLabel\":true}},\"columnOrder\":[\"a8d5ed59-152b-4ca3-be55-57c957519cd6\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"layerId\":\"be2ff626-d58c-4310-a9b3-4616fc1e3bee\",\"accessor\":\"a8d5ed59-152b-4ca3-be55-57c957519cd6\"},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-be2ff626-d58c-4310-a9b3-4616fc1e3bee\"}]},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Count users\"},{\"version\":\"7.12.0\",\"type\":\"lens\",\"gridData\":{\"x\":32,\"y\":28,\"w\":16,\"h\":9,\"i\":\"15af19fe-f97f-4508-a4c9-fbfc8a223b85\"},\"panelIndex\":\"15af19fe-f97f-4508-a4c9-fbfc8a223b85\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"type\":\"lens\",\"visualizationType\":\"lnsXY\",\"state\":{\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"39fd49ef-1bb1-41ce-b246-482e845d6649\":{\"columns\":{\"ef471b4b-c9aa-4f36-a856-b78eb3a910ce\":{\"label\":\"Top values of user.verified\",\"dataType\":\"boolean\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"user.verified\",\"isBucketed\":true,\"params\":{\"size\":5,\"orderBy\":{\"type\":\"column\",\"columnId\":\"1ba4666c-6bb4-4baa-ab43-6a8dcb5ec4b7\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false}},\"1ba4666c-6bb4-4baa-ab43-6a8dcb5ec4b7\":{\"label\":\"Count of records\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\"}},\"columnOrder\":[\"ef471b4b-c9aa-4f36-a856-b78eb3a910ce\",\"1ba4666c-6bb4-4baa-ab43-6a8dcb5ec4b7\"],\"incompleteColumns\":{}}}}},\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"bar_horizontal\",\"layers\":[{\"layerId\":\"39fd49ef-1bb1-41ce-b246-482e845d6649\",\"seriesType\":\"bar_horizontal\",\"xAccessor\":\"ef471b4b-c9aa-4f36-a856-b78eb3a910ce\",\"accessors\":[\"1ba4666c-6bb4-4baa-ab43-6a8dcb5ec4b7\"]}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]},\"references\":[{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"8f755d10-a7fd-11eb-bc95-3538416d1693\",\"name\":\"indexpattern-datasource-layer-39fd49ef-1bb1-41ce-b246-482e845d6649\"}]},\"enhancements\":{}}}]",
+        "optionsJSON": "{\"hidePanelTitles\":false,\"useMargins\":true}",
+        "version": 1,
+        "timeRestore": true,
+        "timeTo": "now",
+        "timeFrom": "now-15d",
+        "refreshInterval": {
+          "pause": true,
+          "value": 5000
+        },
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        }
+      },
+      "references": [
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-79df6561-af49-4eee-a1dd-f3783f8b9119"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-0b4d93ff-6f3a-4c22-a70e-23e632c032cd"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-5888cc3a-1222-4fd3-9750-e9e320d04fd2"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-6780dd61-93d9-4a2d-90cc-348b35a6ce60"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-6a844634-d83e-4187-9e29-266fc9029cb8"
+        },
+        {
+          "name": "filter-index-pattern-0",
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693"
+        },
+        {
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-63e509ec-ea2c-41df-8320-cf37b219a427"
+        },
+        {
+          "name": "filter-index-pattern-0",
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-0a8d53ee-efa1-456a-80fa-77ceb227dc64"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-be2ff626-d58c-4310-a9b3-4616fc1e3bee"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+          "name": "indexpattern-datasource-layer-39fd49ef-1bb1-41ce-b246-482e845d6649"
+        }
+      ],
+      "migrationVersion": {
+        "dashboard": "7.11.0"
+      },
+      "coreMigrationVersion": "7.12.0"
+    },
+    {
+      "id": "8f755d10-a7fd-11eb-bc95-3538416d1693",
+      "type": "index-pattern",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-04-28T08:41:44.033Z",
+      "version": "WzI1MTMsMl0=",
+      "attributes": {
+        "fieldAttrs": "{}",
+        "title": "tweets",
+        "timeFieldName": "timestamp",
+        "fields": "[]",
+        "runtimeFieldMap": "{}"
+      },
+      "references": [],
+      "migrationVersion": {
+        "index-pattern": "7.11.0"
+      },
+      "coreMigrationVersion": "7.12.0"
+    }
+  ]
+}
